@@ -1,0 +1,39 @@
+public class Student {
+    public String name;
+    public String major;
+    public int ID;
+    public double GPA;
+
+    public Student(String name, String major, double GPA, int ID) {
+        this.name = name;
+        this.major = major;
+        this.GPA = GPA;
+        this.ID = ID;
+    }
+
+    public Student() {
+        this.name = "";
+        this.major = "";
+        this.ID = 0;
+        this.GPA = 0.0;
+    }
+
+    public String getAcademicStanding() {
+        if (GPA >= 3.5) {
+            return "Honors";
+        }
+        else if (GPA >= 2.0) {
+            return "Good Standing";
+        }
+        else {
+            return "Probation";
+        }
+    }
+
+    public void displayInfo() {
+        System.out.println("Name: " + name);
+        System.out.println("Major: " + major);
+        System.out.println("ID: " + ID);
+        System.out.println("GPA: " + GPA);
+    }
+}
