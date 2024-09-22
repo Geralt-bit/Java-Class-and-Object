@@ -1,0 +1,27 @@
+public class Main {
+    public static void main(String[] args) {
+
+        Student defaultStudent = new Student();
+        System.out.println("Default Student Info:");
+        defaultStudent.displayInfo();
+        System.out.println("Student 1 Info: " + defaultStudent.getAcademicStanding());
+
+
+        Student student1 = new Student("John Snow", "Night's Watch", 3.8, 123321);
+        Student student2 = new Student("Arya Stark", "Assassin Studies", 3.9, 654321);
+        Student student3 = new Student("Sansa Stark", "Political Science", 3.7, 789012);
+
+        System.out.println("\nStudent 1 Info:");
+        student1.displayInfo();
+        System.out.println("Student 1 Info: " + student1.getAcademicStanding());
+
+        System.out.println("\nStudent 2 Info:");
+        student2.displayInfo();
+        System.out.println("Student 1 Info: " + student2.getAcademicStanding());
+
+        System.out.println("\nStudent 3 Info:");
+        student3.displayInfo();
+        System.out.println("Student 1 Info: " + student3.getAcademicStanding());
+
+    }
+}
